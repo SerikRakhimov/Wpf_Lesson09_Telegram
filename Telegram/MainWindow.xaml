@@ -1,0 +1,95 @@
+﻿<Window x:Class="Telegram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Telegram"
+        mc:Ignorable="d"
+        Title="Telegarm" Height="450" Width="800">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="50"/>
+            <RowDefinition Height ="80*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" />
+        <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Vertical"  Margin="10,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Border Width="25" Height="4" Margin="0,3,0,0"/>
+            <Border Width="25" Height="4" Margin="0,3,0,0"/>
+            <Border Width="25" Height="4" Margin="0,3,0,0"/>
+        </StackPanel>
+        <TextBlock Name ="textBoxTelegram" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" Margin="30,0,0,0" FontWeight="Bold">Telegram
+        </TextBlock>
+        <Button Grid.Column="2" Grid.Row="0" Content="Сменить тему" FontSize="14" FontWeight="Bold" Click="Button_Click"/>
+        <ListView Grid.Column = "0" Grid.Row ="1" BorderThickness="0" SelectionMode="Single"  Margin="5,5,5,5" Name="ListData" Background="White">
+            <StackPanel Orientation="Horizontal" Height="50"  Margin="0,1,0,0">
+                <Image Source="Images/boy.png" Width="20" Height="20" Margin="10,0,0,0"/>
+                <StackPanel Width="120" Orientation="Vertical" Margin="10,10,0,5">
+                    <TextBlock> <Bold>Иван Иванович</Bold></TextBlock>
+                    <TextBlock>Добрый день!</TextBlock>
+                </StackPanel>
+                <Ellipse Width="20" Height="20" Margin="10,20,10,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0,1,0,0">
+                <Image Source="Images/boy.png" Width="20" Height="20" Margin="10,0,0,0"/>
+                <StackPanel Width="120" Orientation="Vertical" Margin="10,10,0,5">
+                    <TextBlock> <Bold>Петр Петрович</Bold></TextBlock>
+                    <TextBlock>Задание выполнено</TextBlock>
+                </StackPanel>
+                <Ellipse Width="20" Height="20" Margin="10,20,10,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0,1,0,0">
+                <Image Source="Images/boy.png" Width="20" Height="20" Margin="10,0,0,0"/>
+                <StackPanel Width="120" Orientation="Vertical" Margin="10,10,0,5">
+                    <TextBlock> <Bold>Игорь Петрович</Bold></TextBlock>
+                    <TextBlock>Посмотри почту.</TextBlock>
+                </StackPanel>
+                <Ellipse Width="20" Height="20" Margin="10,20,10,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0,1,0,0">
+                <Image Source="Images/boy.png" Width="20" Height="20" Margin="10,0,0,0"/>
+                <StackPanel Width="120" Orientation="Vertical" Margin="10,10,0,5">
+                    <TextBlock> <Bold>Мэлс Петрович</Bold></TextBlock>
+                    <TextBlock>Ты готов к экзамену?</TextBlock>
+                </StackPanel>
+                <Ellipse Width="20" Height="20" Margin="10,20,10,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0,1,0,0">
+                <Image Source="Images/girl.png" Width="20" Height="20" Margin="10,0,0,0"/>
+                <StackPanel Width="120" Orientation="Vertical" Margin="10,10,0,5">
+                    <TextBlock> <Bold>Лина</Bold></TextBlock>
+                    <TextBlock>Здраствуйте!</TextBlock>
+                </StackPanel>
+                <Ellipse Width="20" Height="20" Margin="10,20,10,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0,1,0,0">
+                <Image Source="Images/girl.png" Width="20" Height="20" Margin="10,0,0,0"/>
+                <StackPanel Width="120" Orientation="Vertical" Margin="10,10,0,5">
+                    <TextBlock> <Bold>Роза</Bold></TextBlock>
+                    <TextBlock>Привет!</TextBlock>
+                </StackPanel>
+                <Ellipse Width="20" Height="20" Margin="10,20,10,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Margin ="0,1,0,0">
+                <Image Source="Images/girl.png" Width="20" Height="20" Margin="10,0,0,0"/>
+                <StackPanel Width="120" Orientation="Vertical" Margin="10,10,0,5">
+                    <TextBlock> <Bold>Мадлен</Bold></TextBlock>
+                    <TextBlock>Как дела?</TextBlock>
+                </StackPanel>
+                <Ellipse Width="20" Height="20" Margin="10,20,10,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0,1,0,0">
+                <Image Source="Images/boy.png" Width="20" Height="20" Margin="10,0,0,0"/>
+                <StackPanel Width="120" Orientation="Vertical" Margin="10,10,0,5">
+                    <TextBlock> <Bold>Админ</Bold></TextBlock>
+                    <TextBlock>Отлично!</TextBlock>
+                </StackPanel>
+                <Ellipse Width="20" Height="20" Margin="10,20,10,0"/>
+            </StackPanel>
+        </ListView>
+    </Grid>
+</Window>
